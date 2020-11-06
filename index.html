@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="./bibliotecas/lindenmayer.browser.min.js"></script>
+    <script src="./bibliotecas/jquery-3.5.1.min.js"></script>
+    <script src="./bibliotecas/p5.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+  </head>
+  <body>
+    <div class="Menu">
+      <div class="Buttons">
+        <a onclick="startDrawing()" class="btn">Desenhar</a>
+        <a onclick="clearCanvas()" href="#" class="btn">Apagar</a>
+        <a onclick="exportAsSVG()" href="#" class="btn">Exportar Imagem</a>
+      </div>
+      <div class="Inputs">
+        <div class="input-container">
+          <input id="axiom" type="text" />
+          <label>Axiom</label>
+        </div>
+        <div class="input-container">
+          <input id="elementToReplace" type="text" />
+          <label>Elemento Substituido</label>
+        </div>
+        <div class="input-container">
+          <input id="replaceString" id="axiom" type="text" />
+          <label>Nova String</label>
+        </div>
+        <div class="input-container">
+          <input id="iteractions" id="axiom" type="number" />
+          <label>Iterações</label>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="draw-container"></div>
+    <svg></svg>
+  </body>
+</html>
